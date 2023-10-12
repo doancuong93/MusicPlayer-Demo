@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url(https://scontent.fhan2-4.fna.fbcdn.net/v/t1.6435-9/194174484_5656950687680019_6324539508576006379_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=SU7g8sg7WtMAX_qirCm&_nc_ht=scontent.fhan2-4.fna&cb_e2o_trans=t&oh=00_AfB6yOaAW2dVRqhnXhoZdND1URQzkvOmHnIEFVW6qEnnGA&oe=6537666B)">
+
+                </div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+
+                <div class="btn btn-toggle-play">
+                    <i class="fa-regular fa-circle-pause icon-pause"></i>
+                    <i class="fa-regular fa-circle-play icon-play"></i>
+                </div>
+
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+            <!-- <div class="song">
+                <div class="thumb" style="background-image: url(https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a);">
+                </div>
+                <div class="body">
+                    <h3 class="title">Music name</h3>
+                    <p class="author">Singer</p>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
